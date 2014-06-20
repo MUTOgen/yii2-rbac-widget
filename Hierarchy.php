@@ -64,8 +64,8 @@ class Hierarchy extends \yii\base\Widget
                 break;
         }
 
-        return sprintf('<%s class="popoverHandler" data-content="%s" data-title="%s: %s">%s: %s (%s)</%s>',
-            $tag,$item->description,$name,$item->name,$name,$item->name,$item->description,$tag);
+        return sprintf('<%s class="popoverHandler" data-content="%s" data-title="%s: %s">%s: %s</%s>',
+            $tag,$item->description,$name,$item->name,$name,$item->name,$tag);
     }
 
     /**
