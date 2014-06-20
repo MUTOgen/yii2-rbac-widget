@@ -1,0 +1,18 @@
+{
+    "name": "mutogen/yii2-rbac-widget",
+    "description": "This small extension helps you to see whole rbac hierarchy by each role and see hierarchy for current user",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","rbac"],
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Abramov Anton aka MUTOgen",
+            "email": "linx@yandex.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "mutogen\\rbacw\\": ""
+        }
+    }
+}
