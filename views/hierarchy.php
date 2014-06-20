@@ -25,7 +25,9 @@
                             <td><?= $i->name ?></td>
                             <td><?= $i->description ?></td>
                             <td>
-                                <?php if($auth->checkAccess($this->context->userId,$i->name)): ?>
+                                <?php if($i->ruleName && $i->ruleName!=''): ?>
+                                    <span class="glyphicon glyphicon-question-sign"></span> <span class="popoverHandler" data-content="<?=$i->ruleName?>" data-title="<?=Yii::t('app/rbacw','Rule')?>" style="text-decoration: underline; cursor: pointer;"><?=Yii::t('app/rbacw','Rule')?></span>
+                                <?php elseif($auth->checkAccess($this->context->userId,$i->name)): ?>
                                     <span class="glyphicon glyphicon-ok"></span>
                                 <?php else: ?>
                                     <span class="glyphicon glyphicon-remove"></span>
@@ -39,7 +41,9 @@
                             <td><?= $i->name ?></td>
                             <td><?= $i->description ?></td>
                             <td>
-                                <?php if($auth->checkAccess($this->context->userId,$i->name)): ?>
+                                <?php if($i->ruleName && $i->ruleName!=''): ?>
+                                    <span class="glyphicon glyphicon-question-sign"></span> <span class="popoverHandler" data-content="<?=$i->ruleName?>" data-title="<?=Yii::t('app/rbacw','Rule')?>" style="text-decoration: underline; cursor: pointer;"><?=Yii::t('app/rbacw','Rule')?></span>
+                                <?php elseif($auth->checkAccess($this->context->userId,$i->name)): ?>
                                     <span class="glyphicon glyphicon-ok"></span>
                                 <?php else: ?>
                                     <span class="glyphicon glyphicon-remove"></span>
