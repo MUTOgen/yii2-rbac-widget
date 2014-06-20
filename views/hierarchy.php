@@ -26,9 +26,9 @@
                             <td><?= $i->description ?></td>
                             <td>
                                 <?php if($auth->checkAccess($this->context->userId,$i->name)): ?>
-                                    <i class="icon-ok"></i>
+                                    <span class="glyphicon glyphicon-ok"></span>
                                 <?php else: ?>
-                                    <i class="icon-check-empty"></i>
+                                    <span class="glyphicon glyphicon-remove"></span>
                                 <?php endif; ?>
                             </td>
                         </tr>
@@ -40,9 +40,9 @@
                             <td><?= $i->description ?></td>
                             <td>
                                 <?php if($auth->checkAccess($this->context->userId,$i->name)): ?>
-                                    <i class="icon-ok"></i>
+                                    <span class="glyphicon glyphicon-ok"></span>
                                 <?php else: ?>
-                                    <i class="icon-check-empty"></i>
+                                    <span class="glyphicon glyphicon-remove"></span>
                                 <?php endif; ?>
                             </td>
                         </tr>
