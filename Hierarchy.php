@@ -33,6 +33,7 @@ class Hierarchy extends \yii\base\Widget
         //if no userId specified, let's see permissions of the current user
         if ($this->userId === null) $this->userId = \Yii::$app->user->identity->getId();
 
+        \Yii::trace('Run Rbac widget rendering');
         return $this->render('hierarchy',array(
                 'auth' => \Yii::$app->authManager,
             ));
@@ -75,7 +76,7 @@ class Hierarchy extends \yii\base\Widget
      * @return string
      */
 
-    protected function _recursiveList($items,$level)
+    public function _recursiveList($items,$level)
     {
         $out = '';
         $auth = \Yii::$app->authManager;
