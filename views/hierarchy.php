@@ -17,7 +17,7 @@
 
         <div class="tab-content">
             <div class="tab-pane active" id="rights-check">
-                <table class="table table-condensed">
+                <table class="table table-condensed table-hover">
                     <tr><th><?=Yii::t('app/rbacw','User')?></th><th><?=Yii::t('app/rbacw','ID')?>: <?= $this->context->userId?></th><th></th></tr>
                     <tr><th colspan="3"><?=Yii::t('app/rbacw','Permissions')?></th></tr>
                     <?php foreach($auth->getPermissions() as $i):?>
