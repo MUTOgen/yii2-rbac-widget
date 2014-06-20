@@ -34,5 +34,7 @@ Once the extension is installed, simply use it in your code by  :
 
 Options
 -----
+
 `userId` - user's id for permissions list
+
 `class` - full user's class name
