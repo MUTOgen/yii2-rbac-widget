@@ -26,7 +26,7 @@
                             <td><?= $i->description ?></td>
                             <td>
                                 <?php if($i->ruleName && $i->ruleName!=''): ?>
-                                    <span class="glyphicon glyphicon-question-sign"></span> <span class="popoverHandler" data-content="<?=$i->ruleName?>" data-title="<?=Yii::t('app/rbacw','Rule')?>" style="text-decoration: underline; cursor: pointer;"><?=Yii::t('app/rbacw','Rule')?></span>
+                                    <span class="glyphicon glyphicon-question-sign"></span> <span class="popoverHandler" data-placement="left" data-content="<?=$i->ruleName?>" data-title="<?=Yii::t('app/rbacw','Rule')?>" style="text-decoration: underline; cursor: pointer;"><?=Yii::t('app/rbacw','Rule')?></span>
                                 <?php elseif($auth->checkAccess($this->context->userId,$i->name)): ?>
                                     <span class="glyphicon glyphicon-ok"></span>
                                 <?php else: ?>
@@ -42,7 +42,7 @@
                             <td><?= $i->description ?></td>
                             <td>
                                 <?php if($i->ruleName && $i->ruleName!=''): ?>
-                                    <span class="glyphicon glyphicon-question-sign"></span> <span class="popoverHandler" data-content="<?=$i->ruleName?>" data-title="<?=Yii::t('app/rbacw','Rule')?>" style="text-decoration: underline; cursor: pointer;"><?=Yii::t('app/rbacw','Rule')?></span>
+                                    <span class="glyphicon glyphicon-question-sign"></span> <span class="popoverHandler" data-placement="left" data-content="<?=$i->ruleName?>" data-title="<?=Yii::t('app/rbacw','Rule')?>" style="text-decoration: underline; cursor: pointer;"><?=Yii::t('app/rbacw','Rule')?></span>
                                 <?php elseif($auth->checkAccess($this->context->userId,$i->name)): ?>
                                     <span class="glyphicon glyphicon-ok"></span>
                                 <?php else: ?>
