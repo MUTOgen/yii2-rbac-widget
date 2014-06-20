@@ -33,7 +33,7 @@ class Hierarchy extends \yii\base\Widget
         //if no userId specified, let's see permissions of the current user
         if ($this->userId === null) $this->userId = \Yii::$app->user->identity->getId();
 
-        $this->render('hierarchy',array(
+        return $this->render('hierarchy',array(
                 'auth' => \Yii::$app->authManager,
             ));
     }
