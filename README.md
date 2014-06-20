@@ -2,6 +2,7 @@ Rbac Hierarchy
 ==============
 This small extension helps you to see whole rbac hierarchy by each role and see hierarchy for current user
 
+
 Installation
 ------------
 
@@ -28,4 +29,5 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \mutogen\rbacw\AutoloadExample::widget(); ?>```
+<?= \mutogen\rbacw\Hierarchy::widget(); ?>
+```
